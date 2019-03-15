@@ -1,23 +1,28 @@
 const path = require('path')
 
-module.exports = {
-    entry: './index.js',
+module.exports = (env, argv) => {
 
-    target: 'node',
+    const mode = argv.mode
 
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'index.bundle.js'
-    },
+    return ({
+        entry: './index.js',
 
-    module: {
-        rules: [
-            {
-                test: /\.(js)$/,
-                use: 'babel-loader'
-            }
-        ]
-    },
+        target: 'node',
 
-    mode: 'development',
+        output: {
+            path: path.join(__dirname, 'dist'),
+            filename: 'index.bundle.js'
+        },
+
+        module: {
+            rules: [
+                {
+                    test: /\.(js)$/,
+                    use: 'babel-loader'
+                }
+            ]
+        },
+
+        mode,
+    })
 }

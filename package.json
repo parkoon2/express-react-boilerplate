@@ -6,7 +6,8 @@
   "author": "parkoon <par_koon@naver.com>",
   "license": "MIT",
   "scripts": {
-    "pack": "webpack -w --config webpack.config.js",
+    "pack": "webpack -w --mode development --config webpack.config.js",
+    "pack-p": "webpack --mode production --config webpack.config.js",
     "serve": "nodemon dist/index.bundle.js"
   },
   "dependencies": {
