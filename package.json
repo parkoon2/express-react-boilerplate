@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/parkoon/express-react-boilerplate.git",
   "author": "parkoon <par_koon@naver.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
