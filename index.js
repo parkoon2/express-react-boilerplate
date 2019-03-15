@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 
-const APP_DIR = path.join(__dirname, 'client/dist')
+const APP_DIR = path.join(__dirname, 'client/build')
 
 app.use(express.static(APP_DIR))
 
@@ -13,7 +13,7 @@ app.get('/api/v1/list', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/client/dist/index.html'))
+    res.sendFile(path.join(__dirname, '/client/build/index.html'))
 })
 
 const PORT = process.env.PORT || 5000
