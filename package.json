@@ -6,7 +6,8 @@
   "author": "parkoon <par_koon@naver.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "pack": "webpack -w --config webpack.config.js",
+    "serve": "nodemon dist/index.bundle.js"
   },
   "dependencies": {
     "express": "^4.16.4"
