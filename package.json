@@ -5,7 +5,7 @@
   "repository": "https://github.com/parkoon/express-react-boilerplate.git",
   "author": "parkoon <par_koon@naver.com>",
   "license": "MIT",
-  "script": {
+  "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
